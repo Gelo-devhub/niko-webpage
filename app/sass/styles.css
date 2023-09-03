@@ -271,7 +271,7 @@ nav ul .contact {
   @apply px-1.5 py-10;
 }
 .char-ref h1 {
-  @apply text-2xl font-bold text-center 2xl:text-4xl;
+  @apply text-xl md:text-2xl font-bold text-center 2xl:text-4xl;
 }
 .char-ref h1:nth-child(1) {
   @apply mb-10;
@@ -286,10 +286,10 @@ nav ul .contact {
   @apply mb-5 border-0;
 }
 .char-ref .wrap a {
-  @apply flex items-center flex-col  text-lg  text-center text-accent;
+  @apply flex items-center flex-col text-sm md:text-lg text-center text-accent;
 }
 .char-ref .wrap p {
-  @apply text-lg text-center;
+  @apply text-base  md:text-lg text-center;
 }
 
 footer {
