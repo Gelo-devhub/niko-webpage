@@ -5,7 +5,7 @@ import "../sass/styles.css";
 export default function Loading() {
   return (
     <section className="contact-load">
-      <Image src={gg} width={"100%"} />
+      <Image src={gg} width={"100%"} alt="Snail Loading" />
     </section>
   );
 }
