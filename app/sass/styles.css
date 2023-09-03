@@ -10,6 +10,11 @@ html {
   @apply mx-auto;
 }
 
+.max-width-indi {
+  max-width: 90rem;
+  @apply w-full mx-auto;
+}
+
 main {
   background-color: #e3e3e3;
 }
@@ -122,22 +127,20 @@ nav ul .contact {
 }
 
 .skills {
-  @apply flex w-full  pt-5 mb-10;
+  @apply flex w-full flex-col pt-5 mb-10;
+}
+.skills h2 {
+  @apply self-start text-2xl font-bold p-3 pb-1 tracking-wider 2xl:text-3xl;
+}
+.skills .ov-bg {
+  @apply flex w-full h-full;
+  background-color: #a7a7a7;
 }
 .skills .wrapper {
   @apply w-full;
 }
-.skills .wrapper h2 {
-  @apply self-center text-2xl font-bold p-3 pb-1 tracking-wider 2xl:text-3xl;
-}
 .skills .wrapper .col-wrap {
   @apply flex flex-row relative z-10 mx-auto 2xl:px-20;
-  background-color: #a7a7a7;
-}
-.skills .wrapper .col-wrap::after {
-  content: " ";
-  @apply absolute h-full w-[170%] left-[-35%] -z-30;
-  background-color: #a7a7a7;
 }
 .skills .wrapper .col1 {
   max-width: 90rem;
@@ -244,20 +247,14 @@ nav ul .contact {
   @apply bg-accent w-[170%] absolute -bottom-[70%] -left-[50%] h-8 opacity-50;
   z-index: -1;
 }
-.achiev .wrapper {
+.achiev .ov-bg {
   background-image: url("../../assets/images/achi-bg.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  @apply relative flex w-full text-white px-5 gap-8 z-10 xl:gap-0 xl:rounded-lg xl:p-10 2xl:py-20;
 }
-.achiev .wrapper::after {
-  content: "";
-  background-image: url("../../assets/images/achi-bg.jpg");
-  background-position: left center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  @apply w-[200%] absolute h-full -z-10 top-0 left-[-50%];
+.achiev .wrapper {
+  @apply relative flex w-full text-white px-5 gap-8 z-10 xl:gap-0 xl:rounded-lg xl:p-10 2xl:py-20;
 }
 .achiev .wrapper p {
   @apply text-base lg:text-2xl lg:w-5/6 xl:w-5/6 pt-5 mb-3 border-b-2 border-accent border-opacity-70 2xl:mb-6 2xl:text-3xl;

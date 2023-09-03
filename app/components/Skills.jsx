@@ -30,24 +30,29 @@ export default function Skills() {
   ];
   return (
     <>
-      <section className="skills max-width">
-        <div className="wrapper ">
+      <section className="skills">
+        <span className="max-width-indi">
           <h2>Skill Stacks</h2>
-          <div className="col-wrap">
-            <div className="col1">
-              {list1.map((skill) => (
-                <span key={skill}>
-                  <Image src={check} alt={skill} /> <p>{skill}</p>
-                </span>
-              ))}
-            </div>
-            <div className="col2">
-              {list2.map((skill) => (
-                <span key={skill}>
-                  <Image src={check} alt={skill} />
-                  <p>{skill}</p>
-                </span>
-              ))}
+        </span>
+
+        <div className="ov-bg ">
+          <div className="wrapper max-width ">
+            <div className="col-wrap">
+              <div className="col1">
+                {list1.map((skill) => (
+                  <span key={skill}>
+                    <Image src={check} alt={skill} /> <p>{skill}</p>
+                  </span>
+                ))}
+              </div>
+              <div className="col2">
+                {list2.map((skill) => (
+                  <span key={skill}>
+                    <Image src={check} alt={skill} />
+                    <p>{skill}</p>
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         </div>
