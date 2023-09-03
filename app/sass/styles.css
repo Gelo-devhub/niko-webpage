@@ -51,7 +51,7 @@ body {
 
 /* Navbar */
 nav {
-  @apply flex w-screen justify-between md:px-20 py-6 px-6 bg-slate-100 fixed top-0 left-0 z-50;
+  @apply flex w-screen justify-between md:px-20 py-3 px-6 md:py-6 bg-slate-100 fixed top-0 left-0 z-50;
 }
 
 nav .logo {
@@ -63,11 +63,17 @@ nav .logo span {
 }
 
 nav ul {
-  @apply hidden gap-10 md:flex;
+  @apply gap-10 md:flex;
+}
+nav ul a:first-child {
+  @apply hidden md:flex;
+}
+nav ul a:last-child {
+  @apply flex text-base;
 }
 
 nav ul a {
-  @apply px-5 py-2 rounded-lg text-lg tracking-wide text-dark;
+  @apply px-5 py-2  rounded-lg text-lg tracking-wide text-dark;
 }
 
 nav ul .contact {
@@ -284,6 +290,9 @@ nav ul .contact {
 }
 .char-ref .wrap a {
   @apply flex items-center flex-col  text-lg  text-center text-accent;
+}
+.char-ref .wrap p {
+  @apply text-lg text-center;
 }
 
 footer {
