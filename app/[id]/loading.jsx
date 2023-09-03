@@ -1,6 +1,5 @@
-import Image from "next/image";
 import "../sass/styles.css";
-import Load from "../components/load";
+import Load from "../components/Load";
 
 export default function Loading() {
   return (
