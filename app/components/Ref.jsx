@@ -17,14 +17,13 @@ export default function Ref() {
         </span>
         <span>
           <p>Stephanie Laine Zabala Marketing Manager Arvato Bertelsmanns</p>{" "}
-          <a href="mailto:Sallysunga06@gmail.com">Sallysunga06@gmail.com</a>{" "}
+          <a href="mailto:Lainezabala07@gmail.com">Lainezabala07@gmail.com</a>{" "}
           <a href="tel:09973711961">09973711961</a>
         </span>
         <span>
           <p>
             Jayson Bautista Business owner Furniture and Fixture Catholic Realms
           </p>{" "}
-          <a href="mailto:Sallysunga06@gmail.com">Sallysunga06@gmail.com</a>{" "}
           <a href="tel:09071195246">09071195246 </a>
         </span>
       </div>
